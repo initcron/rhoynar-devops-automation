@@ -13,11 +13,11 @@
 
 Here we are provisioning three virtual machines into virtual box using vagrant, follow the below instructions to provisioning.
 * Chnage directory where *Vagrantfile* is placed.
-* Ensure that both *puppet-master.sh* and * puppet-agent.sh * is present in same location.
+* Ensure that both *puppet-master.sh* and *puppet-agent.sh* is present in same location.
 
 Make the below  necessary changes in Vagranfile (if required e.g if you want to change ip addresses for nodes)
 
-1. For Master VM:
+#####1. For Master VM:
 
 <pre>
 
@@ -27,12 +27,12 @@ master.vm.provision "shell", path: "puppet-master.sh", args: "-m 'master' -h '19
 
 </pre>
 
-** Description: **
+**Description:**
 - -m : master host name.
 - -h : master host IP.
 - -a : agent nodes (Required for autosign certificate)
 
-2. For Agent VM
+######2. For Agent VM
 
 <pre>
 
