@@ -3,7 +3,7 @@
 ## Vagrant with puppet node provisioning using shell script and puppet modules for  Gerrit, Zuul, Jenkins and JIRA.
 
 
-  ####Tested with Linux (Debian Jessie)
+  *Tested with Linux (Debian Jessie)*
 
 **Prerequisite:**
 * Vagrant
@@ -32,7 +32,7 @@ master.vm.provision "shell", path: "puppet-master.sh", args: "-m 'master' -h '19
 - -h : master host IP.
 - -a : agent nodes (Required for autosign certificate)
 
-######2. For Agent VM
+#####2. For Agent VM
 
 <pre>
 
